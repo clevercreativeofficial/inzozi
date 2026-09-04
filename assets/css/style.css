@@ -1,0 +1,97 @@
+ /* Empreinte page A4 + gestion des sauts pour le rendu PDF (Puppeteer/Browsershot) */
+
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+ @page {
+     size: A4;
+     margin: 22mm 18mm 26mm 18mm;
+ }
+
+ html,
+ body {
+     background: #E7E2D4;
+ }
+
+ p, li, span{
+    font-family: 'Nunito Sans', sans-serif;
+ }
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+ }
+
+ .sheet {
+     width: 210mm;
+     min-height: 297mm;
+     margin: 0 auto;
+ }
+
+ .avoid-break {
+     break-inside: avoid;
+     page-break-inside: avoid;
+ }
+
+ .article-title{
+    font-size: 1.15rem;
+    font-weight: 600;
+ }
+
+ .article-title::after {
+     content: "";
+     display: block;
+     width: 42px;
+     height: 2px;
+     background: #B08D3D;
+     margin-top: 6px;
+ }
+
+ ol.legal-list {
+     counter-reset: item;
+ }
+
+ ol.legal-list>li {
+     counter-increment: item;
+     position: relative;
+     padding-left: 2rem;
+ }
+
+ ol.legal-list>li::before {
+     content: counter(item) ".";
+     position: absolute;
+     left: 0;
+     font-weight: 600;
+     color: #1F3D2B;
+ }
+
+ ul.dot-list>li {
+     position: relative;
+     padding-left: 1.25rem;
+ }
+
+ ul.dot-list>li::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0.6em;
+     width: 5px;
+     height: 5px;
+     background: #B08D3D;
+     border-radius: 9999px;
+ }
+
+ @media print {
+
+     html,
+     body {
+         background: #FAF6EE;
+     }
+
+     .sheet {
+         box-shadow: none !important;
+         margin: 0 !important;
+     }
+
+     .no-print {
+         display: none !important;
+     }
+ }
