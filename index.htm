@@ -7,7 +7,7 @@
     <title>Charte d'Engagement Individuel du Membre — Communauté INZOZI</title>
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/js/tailwind_config.js"></script>
 
@@ -20,144 +20,147 @@
         <!-- ============ EN-TÊTE ============ -->
         <header class="avoid-break">
 
-            <!-- Bande d'identité : logo/organisation à gauche, contrôle du document à droite -->
-            <div class="flex items-start justify-between border-b-2 border-pine/5 pb-6">
+            <div class="flex gap-10 items-center justify-between border-b-2 border-pine/5 pb-6">
                 <div class="flex items-center gap-4">
-                    <div>
-                    <img src="./assets/logo/ciid_logo.svg" alt="Logo de la Communauté INZOZI" width="56" height="56"
-                        class="w-28 object-contain shrink-0" />
-                        <p class="text-[10px] text-ink/50 mt-1.5">
-                            CIID ASBL — Agrément O.M. n° 530/1229 du 04/09/2018
-                        </p>
-                    </div>
-                    <div class="text-left hidden">
-                        <p class="text-[10px] tracking-[0.3em] text-pine-light uppercase">Communauté</p>
-                        <p class="font-bold text-2xl text-pine leading-none mt-1">INZOZI</p>
-                        <p class="text-[10px] text-ink/50 mt-1.5">
-                            CIID ASBL — Agrément O.M. n° 530/1229 du 04/09/2018
-                        </p>
-                    </div>
+                    <img src="./assets/logo/ciid_logo.svg" alt="Logo CIID" class="w-36 object-contain shrink-0" />
                 </div>
 
-                <div class="text-right shrink-0">
-                    <p class="text-[10px] uppercase tracking-[0.2em] text-gold font-semibold">Document officiel</p>
-                    <p class="text-[11px] text-ink/60 mt-1.5">Réf. membre&nbsp;:
-                        <span data-field="number" class="font-bold"></span>
-                    </p>
-                    <p class="text-[11px] text-ink/60">Émis le&nbsp;:
-                        <span data-field="signingDate" class="font-bold"></span>
+                <div class="flex-1">
+                    <h1 class="font-bold text-2xl text-pine leading-tight tracking-wide">COMMUNAUTÉ INZOZI</h1>
+                    <p class="text-[12px] font-semibold uppercase tracking-[0.15em] text-ink/80 mt-1">
+                        Charte d'engagement individuel du membre
                     </p>
                 </div>
+
+                <div class="text-right shrink-0 w-16"></div>
             </div>
 
-            <!-- Titre de couverture -->
-            <div class="text-center mt-9">
-                <h2 class="max-w-md mx-auto text-3xl font-semibold text-ink">
-                    Charte d'engagement individuel du membre
-                </h2>
-                <div class="w-16 h-px bg-gold mx-auto my-4"></div>
-                <p class="italic text-pine-light text-[13px]">
-                    « Ensemble pour bâtir un patrimoine durable au service des générations présentes et futures »
-                </p>
-            </div>
+            <p class="text-[10.5px] text-ink/60 mt-3">Initiatrice du projet&nbsp;: CIID ASBL</p>
         </header>
 
+        <!-- ============ IDENTIFICATION DU MEMBRE ============ -->
+        <section class="mt-6 avoid-break">
+            <div class="border border-pine/30 rounded-sm p-5 flex items-center gap-6">
+
+                <div
+                    class="w-24 h-28 border border-ink/20 bg-white flex items-center justify-center shrink-0 overflow-hidden">
+                    <img data-field="photoSrc" alt="Photo du membre" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="flex-1">
+                    <p class="text-[11px] tracking-[0.2em] text-gold uppercase font-semibold mb-2">
+                        Identification du membre
+                    </p>
+                    <p class="border-b border-ink/20 pb-1 mb-2">
+                        Nom et prénom&nbsp;:
+                        <span class="font-semibold text-pine" data-field="lastname"></span>
+                        <span class="font-semibold text-pine" data-field="firstname"></span>
+                    </p>
+                    <div class="flex gap-8">
+                        <p class="border-b border-ink/20 pb-1">
+                            N° ID&nbsp;:
+                            <span class="font-semibold text-pine">INZOZI-</span><span class="font-semibold text-pine"
+                                data-field="number"></span>
+                        </p>
+
+                        <p class="border-b border-ink/20 pb-1 flex-1">
+                            Tél&nbsp;: <span class="font-semibold text-pine" data-field="phone"></span>
+                        </p>
+                    </div>
+                    <p class="border-b border-ink/20 pb-1 flex-1">
+                        Email&nbsp;: <span class="font-semibold text-pine" data-field="email"></span>
+                    </p>
+
+                </div>
+
+                <div class="w-24 h-24 border border-gold/50 bg-white flex items-center justify-center p-2 shrink-0">
+                    <img data-field="qrCodeSrc" alt="QR Code du membre" class="w-full h-full object-contain" />
+                </div>
+            </div>
+
+            <p class="text-center italic text-pine-light text-[12.5px] mt-5">
+                « Ensemble pour bâtir un patrimoine durable au service des générations présentes et futures »
+            </p>
+        </section>
+
         <!-- ============ PRÉAMBULE ============ -->
-        <section class="mt-10 avoid-break">
-            <p class="text-[11px] tracking-[0.25em] text-gold uppercase font-semibold">Préambule</p>
-            <blockquote class="border-l-2 border-gold pl-5 mt-3 italic text-ink/90 space-y-3">
-                <p>
-                    La Communauté INZOZI est un projet communautaire initié par CIID ASBL, une organisation
-                    engagée dans la promotion du développement intégré, de la solidarité, de l'autonomisation
-                    économique et du bien-être des communautés.
-                </p>
-                <p>
-                    Créée en 2018 pour mobiliser les citoyens autour d'une vision commune de développement
-                    durable, la Communauté INZOZI œuvre à mettre en place des solutions collectives dans les
-                    domaines de l'éducation, de la santé, de l'entrepreneuriat, de l'emploi, de l'inclusion
-                    financière et de tout autre secteur contribuant à l'amélioration des conditions de vie de
-                    ses membres.
-                </p>
-                <p>
-                    En adhérant à la Communauté INZOZI, je reconnais que je rejoins une initiative fondée sur
-                    la solidarité, la discipline, la responsabilité, la transparence et l'engagement collectif.
-                    Je comprends que sa réussite dépend de l'implication de chacun, du respect des règles
-                    établies et d'une vision commune orientée vers des solutions durables aux défis économiques
-                    et sociaux.
-                </p>
-                <p>
-                    Par la présente Charte, je prends l'engagement moral, civique et communautaire de contribuer
-                    activement au développement de la Communauté INZOZI et à la réalisation de sa mission.
-                </p>
-            </blockquote>
+        <section class="mt-8 avoid-break space-y-3">
+            <p>
+                La Communauté INZOZI est un projet communautaire initié par
+                <strong>CIID ASBL (Community Initiatives for Integrated Development)</strong>, agréée par
+                l'O.M. n° 530/1229 du 04/09/2018, une organisation engagée dans la promotion du développement
+                intégré, de la solidarité, de l'autonomisation économique et du bien-être des communautés.
+            </p>
+            <p>
+                Créée en 2018 dans le but de mobiliser les citoyens autour d'une vision commune de développement
+                durable, la Communauté INZOZI œuvre à la mise en place de solutions collectives dans les domaines
+                de l'éducation, de la santé, de l'entrepreneuriat, de l'emploi, de l'inclusion financière et de
+                tout autre secteur contribuant à l'amélioration des conditions de vie de ses membres.
+            </p>
+            <p>
+                En adhérant à la Communauté INZOZI, je reconnais que je rejoins une initiative portée par CIID
+                ASBL, fondée sur les valeurs de solidarité, de discipline, de responsabilité, de transparence et
+                d'engagement collectif.
+            </p>
+            <p>
+                Je comprends que la réussite de cette communauté dépend de l'implication de chacun de ses membres,
+                du respect des règles établies et de la poursuite d'une vision commune orientée vers des solutions
+                durables aux défis économiques et sociaux.
+            </p>
+            <p>
+                Par la présente Charte, je prends un engagement moral, civique et communautaire à contribuer
+                activement au développement de la Communauté INZOZI et à la réalisation de sa mission.
+            </p>
         </section>
 
         <!-- ============ ARTICLE 1 ============ -->
         <section class="mt-9 avoid-break">
             <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 1 — Mon adhésion</h3>
             <p class="mt-4">En devenant membre de la Communauté INZOZI, je déclare que :</p>
-            <ul class="dot-list mt-3 space-y-2">
+            <ol class="legal-list mt-3 space-y-2">
                 <li>J'ai pris connaissance de la vision, de la mission et des objectifs de la communauté.</li>
                 <li>J'adhère volontairement à un projet communautaire, économique, social et apolitique.</li>
                 <li>Je comprends que le développement de la communauté exige de la patience, de la discipline, de la
                     solidarité et une vision à long terme.</li>
-                <li>Je m'engage à respecter toutes les dispositions de la présente Charte ainsi que les décisions prises
-                    conformément aux textes internes.</li>
-                <li>L'adhésion est un acte libre, réfléchi et responsable.</li>
-            </ul>
+                <li>Je m'engage à respecter toutes les dispositions de la présente Charte ainsi que les décisions
+                    prises conformément aux textes internes.</li>
+            </ol>
         </section>
 
         <!-- ============ ARTICLE 2 ============ -->
-        <section class="mt-9">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">
-                Article 2 — Mes engagements, ma contribution financière et la gestion des fonds
-            </h3>
+        <section class="mt-9 avoid-break">
+            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 2 — Mes engagements</h3>
             <p class="mt-4">Je m'engage à :</p>
             <ol class="legal-list mt-3 space-y-2">
                 <li>Respecter les valeurs d'intégrité, d'honnêteté, de discipline, de solidarité, de respect et de
                     responsabilité.</li>
-                <li>Honorer régulièrement mes obligations financières conformément aux décisions des organes dirigeants.
-                </li>
+                <li>Honorer régulièrement mes obligations financières conformément aux décisions des organes
+                    dirigeants.</li>
+                <li>Reconnaître que mes contributions représentent des droits d'adhésion à la communauté et ne
+                    constituent ni une épargne personnelle ni un investissement donnant droit à un remboursement
+                    automatique ou à des dividendes individuels.</li>
                 <li>Préserver l'image, l'unité et la crédibilité de la Communauté INZOZI.</li>
-                <li>Ne diffuser aucune information mensongère, trompeuse, rumeur ou information non vérifiée susceptible
-                    de porter atteinte à la communauté.</li>
+                <li>Ne diffuser aucune information mensongère, trompeuse ou susceptible de porter atteinte à la
+                    communauté.</li>
                 <li>Participer, selon mes possibilités, aux réunions, formations, consultations et activités
                     communautaires.</li>
-                <li>Soutenir les actions de mobilisation et promouvoir la vision de la Communauté INZOZI avec loyauté,
-                    de manière pacifique, responsable et constructive.</li>
-            </ol>
-
-            <p class="mt-5">Dans le cadre de mon adhésion, je reconnais en outre les conditions financières suivantes :
-            </p>
-            <ol class="legal-list mt-3 space-y-2">
-                <li>Je contribue à hauteur de 360 000 BIF par an, selon les modalités définies par les organes
-                    dirigeants.</li>
-                <li>Je reconnais que cette contribution constitue un droit d'adhésion à la communauté et non une épargne
-                    personnelle immédiatement récupérable, ni une action donnant directement droit à des dividendes.
-                </li>
-                <li>Les fonds collectés sont déposés sur un compte courant ouvert dans une banque ou une institution de
-                    microfinance agréée, puis sur un compte bloqué qui va générer des intérêts pour la communauté.</li>
-                <li>Les fonds restent bloqués jusqu'au lancement officiel de la mise en œuvre d'une activité quelconque.
-                </li>
-                <li>Durant la période préparatoire, les fonds génèrent des intérêts au bénéfice exclusif du projet
-                    communautaire.</li>
-                <li>Cinq pour cent (5%) des droits d'adhésion peuvent être utilisés pour la couverture des charges
-                    diverses durant les cinq premières années.</li>
+                <li>Soutenir les actions de mobilisation et promouvoir la vision de la Communauté INZOZI avec
+                    loyauté et responsabilité.</li>
             </ol>
         </section>
 
         <!-- ============ ARTICLE 3 ============ -->
         <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 3 — Ma carte de membre et
-                mon QR code</h3>
+            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 3 — Ma carte de membre
+                et mon QR code</h3>
             <p class="mt-4">Après validation de mon adhésion :</p>
             <ol class="legal-list mt-3 space-y-2">
-                <li>Je bénéficie d'un identifiant personnel matérialisé par un QR code.</li>
+                <li>Je bénéficie d'un identifiant personnel matérialisé par un QR Code.</li>
                 <li>Ce QR Code constitue la preuve officielle de mon appartenance à la Communauté INZOZI.</li>
                 <li>Il me permet d'accéder aux services et avantages développés par la communauté.</li>
-                <li>Mon QR Code est personnel, confidentiel et incessible, sauf autorisation expresse des organes
+                <li>Mon QR Code est personnel, confidentiel et incessible sauf autorisation expresse des organes
                     compétents.</li>
-                <li>Toute utilisation frauduleuse peut entraîner les sanctions prévues par les textes internes.</li>
+                <li>Toute utilisation frauduleuse peut entraîner des sanctions prévues par les textes internes.</li>
             </ol>
         </section>
 
@@ -166,47 +169,55 @@
             <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 4 — Mes droits et les
                 services communautaires</h3>
             <p class="mt-4">Je reconnais que :</p>
-            <ul class="dot-list mt-3 space-y-2">
+            <ol class="legal-list mt-3 space-y-2">
                 <li>Les services de la Communauté INZOZI sont exclusivement destinés à ses membres.</li>
                 <li>Nul ne peut bénéficier des services de la communauté sans avoir préalablement adhéré.</li>
-                <li>La qualité de membre me donne un accès prioritaire aux opportunités développées par la communauté,
-                    conformément aux critères établis.</li>
-                <li>La communauté développe progressivement des services destinés notamment à l'éducation des enfants
-                    des membres, à l'accès aux soins de santé, à la création d'emplois, au développement des activités
-                    économiques, à l'accompagnement des entrepreneurs et à toute autre initiative approuvée par les
-                    organes dirigeants.</li>
-            </ul>
+                <li>
+                    La Communauté INZOZI développe progressivement des services destinés notamment à :
+                    <ul class="check-list mt-2 ml-2 list-disc">
+                        <li>l'éducation des enfants des membres ;</li>
+                        <li>l'accès aux soins de santé ;</li>
+                        <li>la création d'emplois ;</li>
+                        <li>le développement des activités économiques ;</li>
+                        <li>l'accompagnement des entrepreneurs ;</li>
+                        <li>toute autre initiative approuvée par les organes dirigeants.</li>
+                    </ul>
+                </li>
+                <li>La qualité de membre me donne un accès prioritaire aux opportunités développées par la
+                    communauté, conformément aux critères établis.</li>
+            </ol>
         </section>
 
         <!-- ============ ARTICLE 5 ============ -->
         <section class="mt-9 avoid-break">
             <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 5 — Les limites des
-                services et l'égalité des chances</h3>
+                services</h3>
             <p class="mt-4">Je comprends que :</p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>La Communauté INZOZI ne peut pas résoudre immédiatement tous les problèmes de chacun de ses membres.
+            <ul class="check-list mt-3 space-y-2">
+                <li>La Communauté INZOZI ne peut pas résoudre immédiatement tous les problèmes de chacun de ses
+                    membres.</li>
+                <li>Son développement repose sur une stratégie progressive privilégiant des résultats durables à
+                    moyen et à long terme.</li>
+                <li>Les ressources disponibles peuvent limiter temporairement le nombre de bénéficiaires de
+                    certains services.</li>
+                <li>L'égalité des chances ne signifie pas que tous bénéficieront simultanément des mêmes services.
                 </li>
-                <li>Son développement repose sur une stratégie progressive privilégiant des résultats durables à moyen
-                    et à long terme.</li>
-                <li>Les ressources disponibles peuvent limiter temporairement le nombre de bénéficiaires de certains
-                    services.</li>
-                <li>L'égalité des chances ne signifie pas que tous bénéficieront simultanément des mêmes services.</li>
             </ul>
         </section>
 
         <!-- ============ ARTICLE 6 ============ -->
         <section class="mt-9">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 6 — Critères de sélection
-            </h3>
-            <p class="mt-4">Je reconnais que certains services nécessitent une sélection.</p>
+            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 6 — Critères de
+                sélection</h3>
+            <p class="mt-4">Je reconnais que certains services nécessitent une sélection. À titre d'exemple :</p>
 
             <div class="mt-4 avoid-break">
                 <p class="font-semibold text-pine">1. Recrutement</p>
                 <p class="mt-1.5">
-                    Lorsque la Communauté INZOZI organise un recrutement, les candidats sont prioritairement
-                    issus de ses membres. Toutefois, seuls ceux qui répondent le mieux aux critères de sélection
-                    sont retenus. Les membres non sélectionnés conservent intégralement leur qualité de membre
-                    ainsi que leur droit de bénéficier des autres services communautaires.
+                    Lorsque la Communauté INZOZI organise un recrutement, les candidats sont prioritairement issus
+                    de ses membres. Toutefois, seuls ceux qui répondent le mieux aux critères de sélection sont
+                    retenus. Les membres non sélectionnés conservent intégralement leur qualité de membre ainsi que
+                    leur droit de bénéficier des autres services communautaires.
                 </p>
             </div>
 
@@ -215,119 +226,51 @@
                 <p class="mt-1.5">
                     Lorsqu'un établissement scolaire de la Communauté INZOZI ne dispose pas d'une capacité
                     suffisante pour accueillir tous les enfants des membres, une sélection est opérée selon des
-                    critères transparents et objectifs. Les membres dont les enfants ne sont pas retenus
-                    continuent à bénéficier des autres avantages de la communauté.
+                    critères transparents et objectifs. Les membres dont les enfants ne sont pas retenus continuent
+                    à bénéficier des autres avantages de la communauté.
                 </p>
             </div>
         </section>
 
         <!-- ============ ARTICLE 7 ============ -->
         <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 7 — Gouvernance,
-                transparence et gestion collective</h3>
-            <p class="mt-4">Je reconnais et accepte :</p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>La mise en place d'organes de gouvernance, notamment le Conseil d'administration, le Comité
-                    exécutif, le Comité d'audit et tout autre organe prévu par les textes internes.</li>
-                <li>Le principe de gestion collective et collégiale des ressources communautaires.</li>
-                <li>La réalisation d'audits indépendants et la publication régulière de rapports financiers et
-                    opérationnels.</li>
-                <li>Qu'aucun membre, individuellement, ne peut revendiquer un contrôle exclusif des ressources
-                    communautaires.</li>
-            </ul>
+            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 7 — Retrait d'un
+                membre</h3>
+            <p class="mt-4">En cas de retrait volontaire :</p>
+            <ol class="legal-list mt-3 space-y-2">
+                <li>Je renonce définitivement à toute demande de remboursement des contributions déjà versées.</li>
+                <li>Je reconnais que ces contributions demeurent acquises à la Communauté INZOZI.</li>
+                <li>Si je souhaite quitter la communauté, je peux céder ou vendre mes droits à une autre personne.
+                </li>
+                <li>Cette cession est obligatoirement soumise à l'autorisation préalable de l'Organe Supérieur de la
+                    Communauté INZOZI.</li>
+                <li>Aucun transfert ne peut produire effet sans cette autorisation.</li>
+            </ol>
         </section>
 
         <!-- ============ ARTICLE 8 ============ -->
         <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 8 — Nature du projet</h3>
-            <p class="mt-4">Je reconnais que la Communauté INZOZI :</p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>N'est ni un produit bancaire classique ni un système spéculatif.</li>
-                <li>Ne garantit à aucun membre un rendement financier individuel, fixe, automatique ou immédiatement
-                    payable au titre de sa contribution.</li>
-                <li>Vise prioritairement la constitution d'un patrimoine collectif durable et le développement de
-                    services communautaires structurants.</li>
-            </ul>
-        </section>
-
-        <!-- ============ ARTICLE 9 ============ -->
-        <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 9 — Retrait, démission,
-                cession des droits et force majeure</h3>
-            <p class="mt-4">En cas de retrait volontaire, de démission ou de force majeure, je reconnais que :</p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>Les contributions déjà versées ne font pas l'objet d'une restitution automatique ou immédiate.</li>
-                <li>En cas de retrait volontaire, je renonce à toute demande de remboursement des contributions déjà
-                    versées, lesquelles demeurent acquises à la Communauté INZOZI.</li>
-                <li>Si je souhaite quitter la communauté, je peux céder ou vendre mes droits à une autre personne,
-                    moyennant paiement au cédant.</li>
-                <li>Cette cession est obligatoirement soumise à l'autorisation préalable de l'Organe Supérieur de la
-                    Communauté INZOZI.</li>
-                <li>Aucun transfert ne peut produire effet sans cette autorisation.</li>
-                <li>La priorité demeure la stabilité et la continuité du projet communautaire.</li>
-            </ul>
-        </section>
-
-        <!-- ============ ARTICLE 10 ============ -->
-        <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 10 — Discipline et
-                sanctions</h3>
-            <p class="mt-4">
-                Tout manquement à la présente Charte ou aux textes internes peut entraîner, selon la gravité
-                des faits et conformément aux procédures applicables :
-            </p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>Un avertissement écrit.</li>
-                <li>Une suspension temporaire.</li>
-                <li>Une exclusion définitive.</li>
-            </ul>
-            <p class="mt-3">Les contributions versées demeurent soumises aux règles communautaires en vigueur.</p>
-        </section>
-
-        <!-- ============ ARTICLE 11 ============ -->
-        <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 11 — Règlement des litiges
-            </h3>
-            <p class="mt-4">Tout différend relatif à l'interprétation ou à l'application de la présente Charte est réglé
-                prioritairement par :</p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>La médiation interne communautaire.</li>
-                <li>L'arbitrage des organes compétents.</li>
-                <li>À défaut, conformément aux lois en vigueur.</li>
-            </ul>
-            <p class="mt-3">Je m'engage à respecter les décisions prises conformément aux textes de la Communauté
-                INZOZI.</p>
-        </section>
-
-        <!-- ============ ARTICLE 12 ============ -->
-        <section class="mt-9 avoid-break">
-            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 12 — Portée de mon
-                engagement</h3>
-            <p class="mt-4">La signature de la présente Charte m'engage sur les plans :</p>
-            <ul class="dot-list mt-3 space-y-2">
-                <li>Moral.</li>
-                <li>Civique.</li>
-                <li>Communautaire.</li>
-            </ul>
-            <p class="mt-4 italic text-pine-light">
-                Être membre signifie penser à long terme, agir avec intégrité et protéger l'unité du projet et
-                de la communauté.
-            </p>
+            <h3 class="article-title text-pine font-semibold uppercase tracking-wide">Article 8 — Discipline et
+                règlement des litiges</h3>
+            <p class="mt-4">Je reconnais que :</p>
+            <ol class="legal-list mt-3 space-y-2">
+                <li>Tout manquement à la présente Charte peut entraîner un avertissement, une suspension ou une
+                    exclusion.</li>
+                <li>Tout différend sera d'abord soumis à une médiation interne avant tout autre recours.</li>
+                <li>Je m'engage à respecter les décisions prises conformément aux textes de la Communauté INZOZI.
+                </li>
+            </ol>
         </section>
 
         <!-- ============ ENGAGEMENT DU MEMBRE (bloc variable) ============ -->
         <section class="mt-12 avoid-break bg-sage border border-gold/40 rounded-sm p-8">
-            <p class="text-[11px] tracking-[0.25em] text-gold uppercase font-semibold text-center">Engagement du membre
-            </p>
+            <p class="text-[11px] tracking-[0.25em] text-gold uppercase font-semibold text-center">Engagement du
+                membre</p>
 
             <p class="mt-4 leading-relaxed">
-                Je soussigné(e)
-                <span data-field="lastname" class="font-semibold text-pine"></span>,
-                <span data-field="firstname" class="font-semibold text-pine"></span>,
-                certifie avoir lu, compris et accepté toutes les dispositions de la présente Charte. Je
-                m'engage librement, consciemment et de manière responsable à respecter chacune de ses
-                dispositions et à contribuer activement au développement de la Communauté INZOZI et à la
-                réussite de son projet communautaire.
+                Je soussigné(e) certifie avoir lu, compris et accepté toutes les dispositions de la présente
+                Charte. Je m'engage librement à respecter chacune de ses dispositions et à contribuer activement au
+                développement de la Communauté INZOZI.
             </p>
 
             <div class="grid grid-cols-2 gap-x-10 gap-y-6 mt-8">
@@ -339,7 +282,9 @@
                 </div>
                 <div>
                     <p class="text-[10px] uppercase tracking-widest text-ink/50">Numéro de membre</p>
-                    <p class="mt-1 font-semibold text-pine border-b border-ink/20 pb-1" data-field="number"></p>
+                    <p class="mt-1 font-semibold text-pine border-b border-ink/20 pb-1">
+                        INZOZI-<span data-field="number"></span>
+                    </p>
                 </div>
 
                 <div>
@@ -349,17 +294,9 @@
                 <div>
                     <p class="text-[10px] uppercase tracking-widest text-ink/50">Signature</p>
                     <div class="mt-1 h-14 border-b border-ink/20 flex items-end pb-1">
-                        <img data-field="signatureSrc" alt="Signature du membre" class="max-h-14 object-contain mix-blend-multiply" />
+                        <img data-field="signatureSrc" alt="Signature du membre"
+                            class="max-h-14 object-contain mix-blend-multiply" />
                     </div>
-                </div>
-            </div>
-
-            <div class="flex justify-center mt-8">
-                <div class="text-center">
-                    <div class="w-24 h-24 border border-gold/50 bg-white flex items-center justify-center p-2">
-                        <img data-field="qrCodeSrc" alt="QR Code du membre" class="w-full h-full object-contain" />
-                    </div>
-                    <p class="text-[10px] uppercase tracking-widest text-ink/50 mt-2">QR Code</p>
                 </div>
             </div>
         </section>
@@ -367,15 +304,11 @@
         <!-- ============ DEVISE / PIED DE PAGE ============ -->
         <footer class="mt-12 text-center avoid-break">
             <div class="w-16 h-px bg-gold mx-auto mb-5"></div>
-            <p class="text-[11px] tracking-[0.25em] text-gold uppercase font-semibold">Devise de la Communauté INZOZI
-            </p>
+            <p class="text-[11px] tracking-[0.25em] text-gold uppercase font-semibold">Devise de la Communauté
+                INZOZI</p>
             <p class="italic text-pine mt-3 max-w-xl mx-auto leading-relaxed">
                 « Ma réussite commence par l'engagement, grandit dans la solidarité et se réalise grâce à la
                 discipline. Ensemble, nous bâtissons aujourd'hui le patrimoine des générations futures. »
-            </p>    
-            <p class="italic text-ink/70 mt-3 max-w-xl mx-auto leading-relaxed text-[12.5px]">
-                « Construire ensemble exige plus que de l'argent : cela exige du caractère, de la discipline
-                et de la loyauté. »
             </p>
         </footer>
 
