@@ -8,6 +8,8 @@ const memberData = {
   statutIconSrc: './assets/icons/circle-star.svg',
   phone: '79 123 456',
   email: 'sinzinkayo@gmail.com',
+  pageNumber: '1',
+  totalPages: '6',
   signingDate: new Date().toLocaleDateString('fr-FR', {
     day: '2-digit',
     month: '2-digit',
