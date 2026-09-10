@@ -20,13 +20,13 @@
         <!-- ============ EN-TÊTE ============ -->
         <header class="avoid-break">
 
-            <div class="flex gap-10 items-center justify-between border-b-2 border-pine/5 pb-6">
+            <div class="flex flex-col gap-6 items-center border-b-2 border-pine/5 pb-2">
                 <div class="flex items-center gap-4">
                     <img src="./assets/logo/ciid_logo.svg" alt="Logo CIID" class="w-36 object-contain shrink-0" />
                 </div>
 
-                <div class="flex-1">
-                    <h1 class="font-bold text-2xl text-pine leading-tight tracking-wide">COMMUNAUTÉ INZOZI</h1>
+                <div class="flex-1 text-center">
+                    <h1 class="font-bold text-2xl text-pine">COMMUNAUTÉ INZOZI</h1>
                     <p class="text-[12px] font-semibold uppercase tracking-[0.15em] text-ink/80 mt-1">
                         Charte d'engagement individuel du membre
                     </p>
@@ -35,13 +35,12 @@
                 <div class="text-right shrink-0 w-16"></div>
             </div>
 
-            <p class="text-[10.5px] text-ink/60 mt-3">Initiatrice du projet&nbsp;: CIID ASBL</p>
+            <p class="text-[10.5px] text-ink/60 text-center mt-3">Initiatrice du projet&nbsp;: CIID ASBL</p>
         </header>
 
         <!-- ============ IDENTIFICATION DU MEMBRE ============ -->
         <section class="mt-6 avoid-break">
             <div class="bg-white border border-pine/10 p-5 flex items-center gap-6 rounded-3xl">
-
                 <div
                     class="relative w-24 h-28 bg-white border-2 border-pine-light flex items-center justify-center shrink-0 rounded-xl overflow-hidden">
                     <img data-field="photoSrc" alt="Photo du membre" class="w-full h-full object-cover" />
@@ -51,42 +50,41 @@
                     </span>
                 </div>
 
-                <div class="flex-1">
-                    <p class="text-[11px] tracking-[0.2em] text-gold uppercase font-semibold mb-2">
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] tracking-[0.2em] text-gold uppercase font-semibold mb-2 hidden">
                         Identification du membre
                     </p>
+
                     <p class="border-b border-ink/10 pb-1 mb-2">
                         Nom et prénom&nbsp;:
-                        <span class="font-bold text-pine" data-field="lastname"></span>
-                        <span class="font-bold text-pine" data-field="firstname"></span>
+                        <span class="font-bold text-pine highlight" data-field="lastname"></span>
+                        <span class="font-bold text-pine highlight" data-field="firstname"></span>
                     </p>
-                    <div class="flex items-center gap border">
-                        <p class="border-b border-ink/10 pb-1 flex-1">
-                            Statut&nbsp;:
-                        <div class="min-w-fit h-8 flex gap-2 items-center bg-pine-light pr-6 pl-1 rounded-full">
-                            <span class="w-6 h-6 bg-pipe-light rounded-full flex items-center justify-center">
-                                <img src="./assets/icons/circle-star.svg" class="w-full h-full rounded-full"
-                                    alt="Medal">
+
+                    <div class="flex items-center gap-4 border-b border-ink/10 pb-2 mb-2">
+                        <span class="shrink-0">Statut&nbsp;:</span>
+                        <div class="min-w-fit h-8 flex gap-2 items-center bg-pine-light pr-4 pl-1 rounded-full">
+                            <span class="w-6 h-6 bg-pine-light rounded-full flex items-center justify-center shrink-0">
+                                <img src="" class="w-full h-full rounded-full"
+                                    alt="Medal" data-field="statutIconSrc" />
                             </span>
-                            <div class="flex flex-col">
-                                <span class="font-bold text-white text-[10px] leading-none uppercase"
-                                    data-field="statut"></span>
-                                <span class="text-white/80 text-[9px] leading-none">Membre à part entière</span>
+                            <div class="flex flex-col leading-none">
+                                <span class="font-bold text-white text-[10px] uppercase" data-field="statut"></span>
+                                <span class="text-white/80 text-[9px]" data-field="substatut"></span>
                             </div>
                         </div>
-                        </p>
-                        <p class="border-b border-ink/10 pb-1">
-                            N° ID&nbsp;:
-                            <span class="font-bold text-pine">INZOZI-</span><span class="font-bold text-pine"
-                                data-field="number"></span>
-                        </p>
+                        <span class="ml-auto shrink-0">
+                            N° ID&nbsp;: <span class="font-bold text-pine">IZ-</span><span
+                                class="font-bold text-pine highlight" data-field="number"></span>
+                        </span>
                     </div>
+
                     <div class="flex gap-8">
-                        <p class="border-b border-ink/10 pb-1 flex-1">
-                            Email&nbsp;: <span class="font-bold text-pine" data-field="email"></span>
+                        <p class="border-b border-ink/10 pb-1 inline-flex flex-1 gap-1">
+                            Email&nbsp;: <span class="font-bold text-pine line-clamp-1 highlight" data-field="email"></span>
                         </p>
                         <p class="border-b border-ink/10 pb-1 flex-1">
-                            Tél&nbsp;: <span class="font-bold text-pine" data-field="phone"></span>
+                            Tél&nbsp;: <span class="font-bold text-pine highlight" data-field="phone"></span>
                         </p>
                     </div>
                 </div>
@@ -197,7 +195,7 @@
                 <li>Nul ne peut bénéficier des services de la communauté sans avoir préalablement adhéré.</li>
                 <li>
                     La Communauté INZOZI développe progressivement des services destinés notamment à :
-                    <ul class="check-list mt-2 ml-2 list-disc">
+                    <ul class="check-list mt-2 ml-2">
                         <li>l'éducation des enfants des membres ;</li>
                         <li>l'accès aux soins de santé ;</li>
                         <li>la création d'emplois ;</li>
@@ -299,24 +297,24 @@
             <div class="grid grid-cols-2 gap-x-10 gap-y-6 mt-8">
                 <div>
                     <p class="text-[10px] uppercase tracking-widest text-ink/50">Nom et prénom</p>
-                    <p class="mt-1 font-semibold text-pine border-b border-ink/20 pb-1">
+                    <p class="mt-1 font-bold text-pine border-b border-ink/20 pb-1 highlight">
                         <span data-field="lastname"></span> <span data-field="firstname"></span>
                     </p>
                 </div>
                 <div>
                     <p class="text-[10px] uppercase tracking-widest text-ink/50">Numéro de membre</p>
-                    <p class="mt-1 font-semibold text-pine border-b border-ink/20 pb-1">
-                        INZOZI-<span data-field="number"></span>
+                    <p class="mt-1 font-bold text-pine border-b border-ink/20 pb-1 highlight">
+                        IZ-<span data-field="number"></span>
                     </p>
                 </div>
 
                 <div>
                     <p class="text-[10px] uppercase tracking-widest text-ink/50">Date</p>
-                    <p class="mt-1 font-semibold text-pine border-b border-ink/20 pb-1" data-field="signingDate"></p>
+                    <p class="mt-1 font-bold text-pine border-b border-ink/20 pb-1 highlight" data-field="signingDate"></p>
                 </div>
-                <div>
+                <div class="relative">
                     <p class="text-[10px] uppercase tracking-widest text-ink/50">Signature</p>
-                    <div class="mt-1 h-14 border-b border-ink/20 flex items-end pb-1">
+                    <div class="absolute bottom-0 mt-1 h-14 border-b border-ink/20 flex items-end pb-1">
                         <img data-field="signatureSrc" alt="Signature du membre"
                             class="max-h-14 object-contain mix-blend-multiply" />
                     </div>
