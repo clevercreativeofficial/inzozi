@@ -2,7 +2,8 @@
 const memberData = {
   firstname: 'Ezéchiel',
   lastname: 'SINZINKAYO',
-  number: '02534652',
+  number: '34652',
+  statut: 'Full Member',
   phone: '79 123 456',
   email: 'sinzinkayo@gmail.com',
   signingDate: new Date().toLocaleDateString('fr-FR', {
