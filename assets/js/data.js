@@ -5,7 +5,6 @@ const memberData = {
   number: '34652',
   statut: 'Full Member',
   substatut: 'Membre à part entière',
-  statutIconSrc: './assets/icons/circle-star.svg',
   phone: '79 123 456',
   email: 'sinzinkayo@gmail.com',
   pageNumber: '1',
@@ -18,6 +17,7 @@ const memberData = {
   photoSrc: './assets/images/ezechiel.png',
   signatureSrc: './assets/images/signature.png',
   qrCodeSrc: './assets/images/qr-code.webp',
+  statutIconSrc: './assets/icons/circle-star.svg',
 };
 
 function hydrate(data) {
