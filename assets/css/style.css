@@ -1,7 +1,4 @@
- /* Empreinte page A4 + gestion des sauts pour le rendu PDF (Puppeteer/Browsershot) */
-
- @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
  @page {
      size: A4;
      margin: 22mm 18mm 26mm 18mm;
@@ -45,7 +42,6 @@
      page-break-inside: avoid;
  }
 
- /* ---- Article header: boxed bar (replaces underline treatment) ---- */
  .article-title {
      font-size: 1.15rem;
      font-weight: 600;
@@ -57,12 +53,10 @@
      display: block;
  }
 
- /* remove the old underline pseudo-element */
  .article-title::after {
      content: none;
  }
 
- /* ---- Numbered list: circle badge instead of "1." ---- */
  ol.legal-list {
      counter-reset: item;
      list-style: none;
@@ -94,7 +88,6 @@
      line-height: 1;
  }
 
- /* ---- Bullet list: renamed to match your HTML (check-list, not dot-list) ---- */
  ul.check-list>li {
      position: relative;
      padding-left: 1.25rem;
